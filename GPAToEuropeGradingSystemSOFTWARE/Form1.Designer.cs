@@ -164,7 +164,7 @@
             FormBorderStyle = FormBorderStyle.Fixed3D;
             MaximizeBox = false;
             Name = "Form1";
-            Text = "Form1";
+            Text = "GPA TO EUROPE GRADE CONVERTER";
             ResumeLayout(false);
             PerformLayout();
         }

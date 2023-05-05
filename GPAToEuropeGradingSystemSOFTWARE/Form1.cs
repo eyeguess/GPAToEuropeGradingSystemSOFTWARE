@@ -37,7 +37,7 @@ namespace GPAToEuropeGradingSystemSOFTWARE
             try
             {
                 double x = double.Parse(textBox3.Text);
-                if  (x <= 10 && x >= 4)
+                if (x <= 10 && x >= 4)
                 {
                     double gradeEtoG = (4 * x - 16) / 6;
                     textBox4.Text = gradeEtoG.ToString();
@@ -55,4 +55,4 @@ namespace GPAToEuropeGradingSystemSOFTWARE
             }
         }
     }
-    }
+}
