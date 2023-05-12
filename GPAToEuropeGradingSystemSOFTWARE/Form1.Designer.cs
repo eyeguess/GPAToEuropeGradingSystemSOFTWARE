@@ -150,6 +150,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(410, 419);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -161,6 +162,7 @@
             Controls.Add(label1);
             Controls.Add(textBox3);
             Controls.Add(textBox1);
+            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.Fixed3D;
             MaximizeBox = false;
             Name = "Form1";
