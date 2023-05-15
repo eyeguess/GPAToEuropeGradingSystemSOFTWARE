@@ -14,12 +14,7 @@ namespace GPAToEuropeGradingSystemSOFTWARE
 
         }
 
-        /*
-         * v1.2 notes 1. changed not null in some points to " " 
-         * v2. changed background & added credits
-         * - added a menustrip (only the about tab works)
-         * - revamp of the system
-         */
+      
 
 
 
