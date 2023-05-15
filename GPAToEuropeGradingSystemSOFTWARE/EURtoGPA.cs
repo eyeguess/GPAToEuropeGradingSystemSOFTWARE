@@ -17,28 +17,6 @@ namespace GPAToEuropeGradingSystemSOFTWARE
             InitializeComponent();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                double x = double.Parse(textBox3.Text);
-                if (x <= 10 && x >= 4)
-                {
-                    double gradeEtoG = (4 * x - 16) / 6;
-                    textBox4.Text = gradeEtoG.ToString();
-
-                }
-                else
-                {
-                    textBox4.Text = "NOT VALID";
-
-                }
-            }
-            catch (System.FormatException x)
-            {
-                textBox4.Text = " ";
-            }
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -49,6 +27,29 @@ namespace GPAToEuropeGradingSystemSOFTWARE
         {
             Main z = (Main)Application.OpenForms["Main"];
             z.EnableButton2();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                double a = double.Parse(textBox3.Text);
+                if (a <= 10 && a >= 4)
+                {
+                    double gradeEtoG = (4 * a - 16) / 6;
+                    textBox4.Text = gradeEtoG.ToString();
+
+                }
+                else
+                {
+                    textBox4.Text = "NOT VALID";
+
+                }
+            }
+            catch (System.FormatException a)
+            {
+                textBox4.Text = " ";
+            }
         }
     }
 }
