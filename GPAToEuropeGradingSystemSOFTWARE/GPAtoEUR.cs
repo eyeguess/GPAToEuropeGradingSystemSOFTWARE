@@ -28,16 +28,46 @@ namespace GPAToEuropeGradingSystemSOFTWARE
                     double gradeGtoE = (1.5 * x) + 4;
                     textBox2.Text = gradeGtoE.ToString();
 
+                        if (x >= 0 && x < 1)
+                        {
+                            rating.BackColor = Color.Red;
+                            rating.Text = "Bad!";
+                        }
+                        else if (x >= 1 && x < 2)
+                        {
+                            rating.BackColor = Color.Orange;
+                            rating.Text = "Okay!";
+                        }
+                        else if (x >= 2 && x < 3)
+                        {
+                            rating.BackColor = Color.Yellow;
+                            rating.Text = "Good!";
+                        }
+                        else if (x >= 3 && x < 4)
+                        {
+                            rating.BackColor = Color.Green;
+                            rating.Text = "Great!";
+                        }
+                        else if (x == 4)
+                        {
+                            rating.BackColor = Color.Lime;
+                            rating.Text = "Perfect!";
+                        }
+                        else
+                        {
+                            textBox2.Text = "NOT VALID";
+                        }
                 }
-                else
-                {
-                    textBox2.Text = "NOT VALID";
-
-                }
+                
             }
+
+
             catch (System.FormatException x)
             {
                 textBox2.Text = " ";
+                rating.BackColor = Color.White;
+                rating.Text = " ";
+
             }
         }
 

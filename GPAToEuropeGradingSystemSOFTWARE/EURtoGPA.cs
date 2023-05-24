@@ -38,7 +38,31 @@ namespace GPAToEuropeGradingSystemSOFTWARE
                 {
                     double gradeEtoG = (4 * a - 16) / 6;
                     textBox4.Text = gradeEtoG.ToString();
-
+                    if ( a>= 4 && a < 6)
+                    {
+                        rating.BackColor = Color.Red;
+                        rating.Text = "Bad!";
+                    }
+                    else if (a >= 6 && a < 8)
+                    {
+                        rating.BackColor = Color.Orange;
+                        rating.Text = "Okay!";
+                    }
+                    else if (a >= 8 && a < 9)
+                    {
+                        rating.BackColor = Color.Yellow;
+                        rating.Text = "Good!";
+                    }
+                    else if (a >= 9 && a < 10)
+                    {
+                        rating.BackColor = Color.Green;
+                        rating.Text = "Great!";
+                    }
+                    else if (a == 10)
+                    {
+                        rating.BackColor = Color.Lime;
+                        rating.Text = "Perfect!";
+                    }
                 }
                 else
                 {
@@ -49,6 +73,8 @@ namespace GPAToEuropeGradingSystemSOFTWARE
             catch (System.FormatException a)
             {
                 textBox4.Text = " ";
+                rating.BackColor = Color.White;
+                rating.Text = " ";
             }
         }
     }

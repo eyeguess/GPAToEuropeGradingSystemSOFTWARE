@@ -34,6 +34,7 @@
             label1 = new Label();
             textBox1 = new TextBox();
             back1 = new Button();
+            rating = new TextBox();
             SuspendLayout();
             // 
             // label5
@@ -98,12 +99,22 @@
             back1.UseVisualStyleBackColor = true;
             back1.Click += button1_Click;
             // 
+            // rating
+            // 
+            rating.ForeColor = SystemColors.WindowText;
+            rating.Location = new Point(43, 109);
+            rating.Name = "rating";
+            rating.ReadOnly = true;
+            rating.Size = new Size(125, 27);
+            rating.TabIndex = 15;
+            // 
             // GPAtoEUR
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Maroon;
             ClientSize = new Size(422, 146);
+            Controls.Add(rating);
             Controls.Add(back1);
             Controls.Add(label5);
             Controls.Add(textBox2);
@@ -126,5 +137,6 @@
         private Label label1;
         private TextBox textBox1;
         private Button back1;
+        private TextBox rating;
     }
 }
